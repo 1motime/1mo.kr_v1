@@ -709,6 +709,10 @@ width:100%;
     grid-column: 1/13;
 
   }
+  .WorksSeperateBox{
+    grid-column: 1/13;
+    height:32px;
+  }
   .ContentsImgAWrapper{
     /*8-columns*/
     grid-column: 1/9;
