@@ -556,11 +556,47 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     grid-column-gap: 16px;
     grid-row-gap: 6px;
     height: auto;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
+  }
+  .ExperiencePeriod{
+    grid-column: 2;
+    grid-row: 1 / 3;
   }
   .ExperienceLine{
     grid-column: 1 / 3;
     border-top:1px solid #E1E1E1;
+  }
+  .ExperienceWrapper{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 5fr 160px;
+    grid-column-gap: 16px;
+    margin: 16px 0px;
+  }
+  .ExperienceWorks{
+    margin-top:8px;
+  }
+  .ExperienceRole, .ExperienceCompanyName{
+    font-size:14.5px;
+    text-align: left;
+    color: #444444;
+    font-family: 'roboto', 'Noto Sans KR', sans-serif;
+    letter-spacing:-0.03em;
+    word-spacing:0.03em;
+    margin-bottom:2px;
+    font-weight:400;
+  }
+  .ExperienceWorkslist{
+    list-style-type: circle;
+    font-size:12.5px;
+    text-align: left;
+    color: #444444;
+    font-family: 'roboto', 'Noto Sans KR', sans-serif;
+    letter-spacing:-0.03em;
+    word-spacing:0.03em;
+    font-weight:100;
+    margin-bottom:2px;
+    margin-left:18px;
   }
   .SmallH5{
     padding:0px 0px 10px 0px;
@@ -579,6 +615,9 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     grid-column-gap: 16px;
     height: auto;
   }
+  .ToolsWrapper{
+    margin-bottom:16px;
+  }
   .ConcernText{
     border-left:1px solid #E1E1E1;
     padding-left:16px;
@@ -588,6 +627,9 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;    
+  }
+  .ConcernTitle{
+    padding-bottom: 8px;
   }
   .ConcernModule{
     padding:0;
@@ -892,11 +934,15 @@ width:100%;
       #ExperienceContainer{
         grid-template-columns: 1fr 80px;
       }
+      .ExperienceWrapper{
+        grid-template-columns: 1fr 80px;
+      }
       #ConcernContainer{
         grid-template-columns: 1fr 1fr 1fr;
       }      
   }
   @media (max-width:640px){
+
       #PortfolioContainer{
         grid-template-columns: 1fr 1fr;
       }
@@ -967,6 +1013,9 @@ width:100%;
         margin:0px -16px 0px 0px;
       }
       #ConcernContainer{
+        grid-template-columns: 1fr 1fr;
+      }
+      #ToolsContainer{
         grid-template-columns: 1fr 1fr;
       }
       #MessageRow{
