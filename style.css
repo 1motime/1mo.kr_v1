@@ -151,6 +151,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     letter-spacing:-0.03em;
     /*word-spacing:-0.03em;*/
     font-weight: 300;
+    word-break: keep-all;
   }
   .korean:lang(ko){
     font-family: 'Noto Sans KR', sans-serif;
@@ -589,6 +590,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     letter-spacing:-0.03em;
     /*word-spacing:0.03em;*/
     /*margin-bottom:px;*/
+    word-break: keep-all;
     font-weight:400;
   }
   .ExperienceWorkslist{
@@ -600,6 +602,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     letter-spacing:-0.03em;
     /*word-spacing:-0.03em;*/
     font-weight:300;
+    word-break: keep-all;
     margin-bottom:4px;
     margin-left:18px;
   }
