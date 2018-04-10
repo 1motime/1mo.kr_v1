@@ -149,7 +149,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     text-align: left;
     font-family: 'roboto', 'Noto Sans KR', sans-serif;
     letter-spacing:-0.03em;
-    word-spacing:0.03em;
+    /*word-spacing:-0.03em;*/
     font-weight: 300;
   }
   .korean:lang(ko){
@@ -163,13 +163,15 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
       font-family: 'roboto', 'Noto Sans KR', sans-serif;
       font-weight:300;
     }*/
-
+  .Manifestolist{
+    margin-left:-8px;
+  }
   .MainContentsText:lang(ko){
     padding:12px 0px 34px 0px;
     font-size: 13.5px;
     line-height: 24px;
     letter-spacing: -0.03em;
-    word-spacing:0.03em;
+    /*word-spacing:0.03em;*/
     /*font-family: 'roboto', 'Noto Sans KR', sans-serif;*/
     font-weight:300;
   }
@@ -187,6 +189,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   .ManifestoTextKor{
     font-size:12px;
     font-family: 'Noto Sans KR', sans-serif;
+
     margin-bottom: 16px;
     font-weight:100;
   }
@@ -584,7 +587,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     color: #444444;
     font-family: 'roboto', 'Noto Sans KR', sans-serif;
     letter-spacing:-0.03em;
-    word-spacing:0.03em;
+    /*word-spacing:0.03em;*/
     /*margin-bottom:px;*/
     font-weight:400;
   }
@@ -595,7 +598,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     color: #444444;
     font-family: 'roboto', 'Noto Sans KR', sans-serif;
     letter-spacing:-0.03em;
-    word-spacing:0.03em;
+    /*word-spacing:-0.03em;*/
     font-weight:300;
     margin-bottom:4px;
     margin-left:18px;
@@ -1035,6 +1038,9 @@ width:100%;
       }
 
   @media (max-width:415px){
+      .Manifestolist{
+        margin-left:-18px;
+      }
       .ExperienceRole, .ExperienceCompanyName{
         font-size:13.5px;
       }
