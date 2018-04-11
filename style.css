@@ -3,7 +3,17 @@
     border:1px solid tomato;
   }*/
 
-
+/*transition*/
+  .mainText {
+    margin: 0px;
+    display: inline-block;
+    /*font-size: 100px;*/
+    width: 0%;
+    transition: width 2s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+  }
 /*twitter timeline*/
 blockquote.twitter-tweet {
   display: inline-block;
@@ -596,6 +606,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   .ExperienceWorkslist{
     list-style-type: circle;
     font-size:13px;
+    line-height: 18px;
     text-align: left;
     color: #444444;
     font-family: 'roboto', 'Noto Sans KR', sans-serif;
