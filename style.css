@@ -3,17 +3,7 @@
     border:1px solid tomato;
   }*/
 
-/*transition*/
-  .mainText {
-    margin: 0px;
-    display: inline-block;
-    /*font-size: 100px;*/
-    width: 0%;
-    transition: width 2s;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: clip;
-  }
+
 /*twitter timeline*/
 blockquote.twitter-tweet {
   display: inline-block;
@@ -786,11 +776,19 @@ width:100%;
     /*4-columns 2row*/
     grid-column: 5/9;
   }
+  .ContentsImgC-1Wrapper{
+    /*4-columns 1row*/
+    grid-column: 1/5;    
+  }
+  .ContentsImgC-2Wrapper{
+    /*4-columns 1row*/
+    grid-column: 5/9;    
+  }
   .ContentsImgB-3Wrapper{
     /*4-columns 2row*/
     grid-column: 9/13;
   }
-  .ContentsImgC-1Wrapper{
+  /*.ContentsImgC-1Wrapper{
    grid-column: 1/4; 
   }
   .ContentsImgC-1Wrapper{
@@ -804,7 +802,7 @@ width:100%;
   }
   .ContentsImgC-4Wrapper{
    grid-column: 7/9; 
-  }
+  }*/
 
   .ContentsImgA{
     /* 16:9 ratio */ 
@@ -1015,6 +1013,12 @@ width:100%;
       }
       .ContentsImgB-2Wrapper{
         grid-column: 7/13;
+      }
+      .ContentsImgC-1Wrapper{
+        grid-column: 1/13;    
+      }
+      .ContentsImgC-2Wrapper{
+        grid-column: 1/13;    
       }
       .ContentsImgFullWrapper{
         margin:0px -16px;

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<body>
+	<style>
+		.has-scroll-reveal { opacity: 0; animation-play-state: paused; }
+
+		.animated {
+		  -webkit-animation-duration: 1.5s;
+		  animation-duration: 1.5s;
+		  -webkit-animation-fill-mode: both;
+		  animation-fill-mode: both;
+		    animation-play-state: running;
+		}
+
+		.fadeInUp {
+		  -webkit-animation-name: fadeInUp;
+		  animation-name: fadeInUp;
+		}
+
+
+		@keyframes fadeInUp {
+		  from {
+		    opacity: 0;
+		    -webkit-transform: translate3d(0, 2.5rem, 0);
+		    transform: translate3d(0, 2.5rem, 0);
+		  }
+
+		  to {
+		    opacity: 1;
+		    -webkit-transform: none;
+		    transform: none;
+		  }
+		}
+	</style>
+	<script>
+		/* Simple Scroll Reveal
+		 * @author Machine Agency [hello@machine-agency.com]
+		 * @link http://machine-agency.com
+		 */
+		jQuery(document).ready( function($) {
+		    var revealClass = '.animated';
+		    var targetClass = '.has-scroll-reveal:not(' + revealClass + ')';
+		    var offset = 50; // Offset from bottom of viewport in pixels.
+
+		    var winHeight = $(window).height();
+
+		    // Recalc height of window in case of resize
+		    $(window).bind('resizeEnd', function() {
+		      winHeight = $(window).height();
+		    });
+
+		    // Fire when page loads
+		    triggerAnimation(revealClass, targetClass, offset, winHeight);
+
+		    // Also fire on scroll
+		    $(window).on('scroll', function() {
+		        triggerAnimation(revealClass, targetClass, offset, winHeight);
+		    }); // window.on('scroll')
+
+		}); // document.ready
+
+		function triggerAnimation(revealClass, targetClass, offset, winHeight) {
+
+		      // Get current scrollPos
+		      var trigger = $(window).scrollTop() + winHeight - offset;
+
+		      // Loop through elements we're affecting
+		      $(targetClass).each(function() {
+		        var elementOffset = $(this).offset().top;
+
+		        if( elementOffset < trigger ) {
+
+		          $(this).addClass( revealClass.replace('.','') );
+		        }
+		      });
+
+		}
+
+		/*
+		 * ResizeEnd
+		 *
+		 * Example:
+		 * $(window).bind('resizeEnd', function() {
+		 *  console.log('resize ended 500ms ago');
+		 * });
+		 */
+		$(window).resize(function() {
+
+		    if(this.resizeTO) clearTimeout(this.resizeTO);
+
+		    this.resizeTO = setTimeout(function() {
+		        $(this).trigger('resizeEnd');
+		    }, 500);
+
+		});
+	</script>
+	<h1>My Scroll Reveal Test</h1>
+	<p class="has-scroll-reveal animation fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+	
+</body>
+</html>

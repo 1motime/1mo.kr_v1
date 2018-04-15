@@ -14,3 +14,9 @@ $('selector').loupe({
 
 
 
+function animate() {
+  document.getElementById("mainText").style.width = "100%";
+}
+
+
+// scroll and play
