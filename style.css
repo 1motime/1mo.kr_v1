@@ -149,7 +149,6 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     text-align: left;
     font-family: 'roboto', 'Noto Sans KR', sans-serif;
     letter-spacing:-0.03em;
-    /*word-spacing:-0.03em;*/
     font-weight: 300;
     word-break: keep-all;
   }
@@ -158,12 +157,6 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     font-weight: 300;
 
   }
-    /*.MainContentsText{
-      padding:56px 0px 34px 0px;
-      line-height: 24px;
-      font-family: 'roboto', 'Noto Sans KR', sans-serif;
-      font-weight:300;
-    }*/
   .Manifestolist{
     margin-left:-8px;
   }
@@ -414,6 +407,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     #twitterContainer{
       height:452px;
       overflow-y: scroll;
+      -webkit-overflow-scrolling: touch; 
       border-top:1px solid #E1E1E1;
       border-bottom:1px solid #E1E1E1;
     }
@@ -561,7 +555,6 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     grid-column-gap: 16px;
     grid-row-gap: 6px;
     height: auto;
-    /*margin-bottom: 30px;*/
   }
   .ExperiencePeriod{
     grid-column: 2;
@@ -580,7 +573,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     margin: 16px 0px;
   }
   .ExperienceWorks{
-    margin-top:4px;
+    margin-top:8px;
   }
   .ExperienceRole, .ExperienceCompanyName{
     font-size:15px;
@@ -588,8 +581,6 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     color: #444444;
     font-family: 'roboto', 'Noto Sans KR', sans-serif;
     letter-spacing:-0.03em;
-    /*word-spacing:0.03em;*/
-    /*margin-bottom:px;*/
     word-break: keep-all;
     font-weight:400;
   }
