@@ -1,3 +1,9 @@
+// alert IE
+var agent = navigator.userAgent.toLowerCase();
+if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+alert("인터넷 익스플로러는 지원하지 않습니다. 크롬, 사파리, 파이어폭스 등 모던 브라우저를 사용해주세요.");
+}
+
 $(document).ready(function(){
 	$("#navBtnContainer ul.sub").hide();
 	$("#navBtnContainer ul.menu li").click(function(){
@@ -13,18 +19,4 @@ $('selector').loupe({
 
 
 
-
-function animate() {
-  document.getElementById("mainText").style.width = "100%";
-}
-
-
-// alert IE
-var agent = navigator.userAgent.toLowerCase();
-
- 
-
-if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
-alert("인터넷 익스플로러 환경은 지원하지 않습니다. 크롬, 사파리, 파이어폭스 등 모던 브라우저를 이용해주세요.");
-}
 
