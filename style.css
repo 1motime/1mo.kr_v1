@@ -1,5 +1,5 @@
 /*BOX PREVIEW*/
-/*  div{
+  /*div{
     border:1px solid tomato;
   }*/
 
@@ -354,7 +354,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
       padding: 0;
       /*overflow: hidden;*/
   }
-  .imgcontainer,.container  {
+  .whitecontainer,.container  {
     background-color: white;
   }
   .artboard {
@@ -753,14 +753,7 @@ width:100%;
     grid-column:10/13;
   }
 
-  .ContentsImgFull{
-    position: relative; 
-    /*overflow: hidden;*/
-    height:auto;
-    margin:0px;
-    padding:0px;
 
-  }
   .FullContentsImg{
     width: 100%;
     /*margin-bottom:32px;*/
