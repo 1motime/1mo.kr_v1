@@ -146,9 +146,9 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   }
   p {
     color: #444444;
-    font-size:15px;
+    font-size:16px;
     text-align: left;
-    line-height: 21px;
+    line-height: 1.5;
     margin:0px;
     padding:0;
     font-family: 'roboto', sans-serif;
@@ -157,7 +157,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   }
   p:lang(ko){
 
-    font-size:13.5px;
+    font-size:14.5px;
     text-align: left;
     font-family: 'roboto', 'Noto Sans KR', sans-serif;
     letter-spacing:-0.03em;
@@ -533,12 +533,12 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   #MessageRow{
     grid-column-gap: 16px;
     display:grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
   }
   .MessageRowText{
         font-family: 'roboto', 'Noto Sans KR', sans-serif;
         font-weight:400;
-        font-size:15px;
+        font-size:15.5px;
         letter-spacing: -0.03em;
         word-spacing: 0.02em;
         line-height:1.7;
@@ -568,7 +568,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   #ExperienceContainer{
     display: grid;
     justify-content: space-between;
-    grid-template-columns: 5fr 120px;
+    grid-template-columns: 5fr 130px;
     grid-column-gap: 16px;
     grid-row-gap: 6px;
     height: auto;
@@ -584,7 +584,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   .ExperienceWrapper{
     display: grid;
     justify-content: space-between;
-    grid-template-columns: 5fr 120px;
+    grid-template-columns: 5fr 130px;
     grid-column-gap: 16px;
     grid-row-gap: 0px;
     margin: 16px 0px;
@@ -593,7 +593,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     margin-top:8px;
   }
   .ExperienceRole, .ExperienceCompanyName{
-    font-size:15px;
+    font-size:16px;
     text-align: left;
     color: #444444;
     font-family: 'roboto', 'Noto Sans KR', sans-serif;
