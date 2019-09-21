@@ -148,7 +148,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     color: #444444;
     font-size:16px;
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.55;
     margin:0px;
     padding:0;
     font-family: 'roboto', sans-serif;
@@ -160,7 +160,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     font-size:14.5px;
     text-align: left;
     font-family: 'roboto', 'Noto Sans KR', sans-serif;
-    letter-spacing:-0.03em;
+    letter-spacing:-0.02em;
     font-weight: 300;
     word-break: keep-all;
   }
@@ -174,9 +174,9 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   }
   .MainContentsText:lang(ko){
     padding:12px 0px 34px 0px;
-    font-size: 13.5px;
-    line-height: 24px;
-    letter-spacing: -0.03em;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.02em;
     /*word-spacing:0.03em;*/
     /*font-family: 'roboto', 'Noto Sans KR', sans-serif;*/
     font-weight:300;
@@ -225,7 +225,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     .InformationText{
       list-style-type: none;
       font-family:'Roboto', 'Noto Sans KR', sans-serif;
-      font-size:12px;
+      font-size:13.5px;
       line-height: 21px;
       font-weight: 500;
       /*margin-top:8px;*/
@@ -247,7 +247,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     .InformationTextDetails{
       font-family:'Roboto', 'Noto Sans KR', sans-serif;     
       /*font-size:12px; */
-      line-height:16px;
+      line-height:1.5;
       margin-bottom:8px;
       list-style-type: none;
       margin-left: 8px;
@@ -1061,7 +1061,7 @@ width:100%;
         margin-left:-18px;
       }
       .ExperienceRole, .ExperienceCompanyName{
-        font-size:13.5px;
+        font-size:15px;
       }
       #menuBtn{
         top:32px;
@@ -1111,7 +1111,7 @@ width:100%;
         padding-bottom:24px;
       }
       h5{
-        font-size:12px;
+        font-size:13px;
       }
       .ManifestoText{
         font-size:15px;
@@ -1148,7 +1148,7 @@ width:100%;
       }
       .MessageRowText{
         /*font-weight:400;*/
-        font-size:14.5px;
+        font-size:15px;
         line-height:1.7;
       }
   
