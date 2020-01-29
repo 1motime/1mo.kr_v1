@@ -994,6 +994,7 @@ width:100%;
       }
       #issueTextBox{
         margin:0px 0px 18px 0px;
+        height: 90px;
       }
       .MainContentsContainer{
         grid-column:1/13;
