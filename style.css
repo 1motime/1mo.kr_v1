@@ -178,6 +178,9 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
     line-height: 1.6;
     font-weight:300;
   }
+  .ContentsText{
+    padding: 0px 0px 8px 0px;
+  }
 
   .ManifestoText{
     font-size:22px;
